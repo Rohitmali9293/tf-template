@@ -1,6 +1,6 @@
 # Module Block: Create a single Compute Engine instance
 module "myvminstance" {
-  source  = "git@github.com/Rohitmali9293/gcp-tfmodule-gce.git"
+  source  = "git::https://github.com/Rohitmali9293/gcp-tfmodule-gce.git"
   for_each = local.instance
   instance_name = local.instance_name
   machine_type = each.value.machine_type
