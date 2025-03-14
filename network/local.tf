@@ -1,6 +1,6 @@
 locals {
   # Load full YAML file and decode it
-  config = lookup(yamldecode(file("../../../project.yml")), terraform.workspace, {})
+  config = lookup(yamldecode(file("../../project.yml")), terraform.workspace, {})
 
   network_name = "${terraform.workspace}-network"  # Ensure unique network per workspace
 

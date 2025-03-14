@@ -1,6 +1,6 @@
 locals {
   # Load full YAML file and decode it
-  config = lookup(yamldecode(file("../../../project.yml")), terraform.workspace, {})
+  config = lookup(yamldecode(file("../../project.yml")), terraform.workspace, {})
 
   instance_name = "${terraform.workspace}-instance"  # Ensure unique instance per workspace
 
