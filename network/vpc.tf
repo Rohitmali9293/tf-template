@@ -1,6 +1,6 @@
 # Resource: VPC
 module "myvpc" {
-  source  = "https://github.com/Rohitmali9293/gcp-tfmodule-netowrk.git"
+  source  = "git::https://github.com/Rohitmali9293/gcp-tfmodule-netowrk.git"
   network_name = local.network_name
   project_id = var.project_name
   subnets = local.subnets
