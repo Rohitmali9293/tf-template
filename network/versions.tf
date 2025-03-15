@@ -8,7 +8,7 @@ terraform {
         }
    }
    backend "gcs" {
-    bucket = "tf-9293-sandbox-terraform-backup"
+    #bucket = "tf-9293-sandbox-terraform-backup"
     #prefix = "${terraform.workspace}/network"
   } 
  }

@@ -8,7 +8,7 @@ terraform {
         }
    }
    backend "gcs" {
-    bucket = "tf-9293-sandbox-terraform-backup"
+    #bucket = "tf-9293-sandbox-terraform-backup"
     #prefix = "${terraform.workspace}/gce" #Terraform does not support dynamic values in backend.tf
     #terraform init -backend-config="bucket=tf-9293-sandbox-terraform-backup" -backend-config="prefix=terraform/state/drn/gce"
   }
