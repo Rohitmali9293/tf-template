@@ -1,6 +1,6 @@
 
 
-variable "project_name" {
+variable "project" {
   description = "The name of the project to use"
   type        = string
 }
