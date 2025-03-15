@@ -16,6 +16,6 @@ terraform {
  }
 
  provider "google" {
-  project = "tf-9293-sandbox"
-  region = "asia-south1"
+  project = var.project_name
+  region = var.region
 }
