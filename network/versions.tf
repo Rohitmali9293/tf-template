@@ -9,11 +9,11 @@ terraform {
    }
    backend "gcs" {
     bucket = "tf-9293-sandbox-terraform-backup"
-    prefix = "${terraform.workspace}/network"
+    #prefix = "${terraform.workspace}/network"
   } 
  }
 
  provider "google" {
-  project = var.project_name
-  region = var.region
+  project = "tf-9293-sandbox"
+  region = "asia-south1"
 }
